@@ -10,6 +10,12 @@ html {
   font-size: 10px;
   font-family: "Poppins", "Times New Roman", Times, serif;
   scroll-behavior: smooth;
+  text-align: justify;
+}
+
+h2 {
+  color: gold;
+  font-style: italic;
 }
 
 a {
@@ -46,6 +52,10 @@ p {
   text-align: center;
 }
 
+.title {
+  color: gold;
+}
+
 /* Seção de apresentação */
 
 #presentation {
@@ -77,9 +87,9 @@ p {
 #presentation .cta {
   display: inline-block;
   padding: 10px 30px;
-  color: gold;
+  color: aquamarine;
   background-color: transparent;
-  border: 2px solid gold;
+  border: 2px solid aquamarine;
   font-size: 2rem;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -90,7 +100,7 @@ p {
 #presentation .cta:hover {
   color: white;
   font-weight: 500;
-  background-color: gold;
+  background-color: aquamarine;
 }
 #presentation h1 span {
   position: absolute;
@@ -100,7 +110,7 @@ p {
   width: 0%;
   animation: text_reveal_box 1s ease;
   animation-delay: 0.5s;
-  background-color: gold;
+  background-color: aquamarine;
 }
 #presentation h1:nth-child(1) span {
   animation-delay: 0.5s;
@@ -125,22 +135,22 @@ p {
 
 /* Seção de Portifólio */
 
-#portfolio .portfolio {
+#cidades .cidades {
   flex-direction: column;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
-#portfolio .portfolio-header h1 {
+#cidades .cidades-header h1 {
   margin-bottom: 50px;
 }
-#portfolio .all-projects {
+#cidades .all-projects {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#portfolio .project-item {
+#cidades .project-item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -151,7 +161,7 @@ p {
   border-radius: 10px;
 }
 
-#portfolio .project-info {
+#cidades .project-info {
   padding: 30px;
   flex-basis: 50%;
   height: 100%;
@@ -163,25 +173,25 @@ p {
   color: white;
 }
 
-#portfolio .project-info h1 {
+#cidades .project-info h1 {
   font-size: 4rem;
   font-weight: 500;
 }
 
-#portfolio .project-info h2 {
+#cidades .project-info h2 {
   font-size: 1.8rem;
   font-weight: 500;
   margin-top: 10px;
 }
 
-#portfolio .project-img {
+#cidades .project-img {
   flex-basis: 50%;
   height: 300px;
   overflow: hidden;
   position: relative;
 }
 
-#portfolio .project-img:after {
+#cidades .project-img:after {
   content: "";
   position: absolute;
   left: 0;
@@ -191,10 +201,10 @@ p {
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
   opacity: 0;
 }
-#portfolio .project-img img {
+#cidades .project-img img {
   transition: 0.5s ease transform;
 }
-#portfolio .project-item:hover .project-img img {
+#cidades .project-item:hover .project-img img {
   transform: scale(1.1);
 }
 
@@ -225,20 +235,20 @@ p {
 
 /* Media Query */
 @media only screen and (min-width: 768px) {
-  #portfolio .project-item {
+  #cidades .project-item {
     flex-direction: row;
     height: 400px;
     margin: 0;
     width: 100%;
     border-radius: 0;
   }
-  #portfolio .all-projects .project-info {
+  #cidades .all-projects .project-info {
     height: 100%;
   }
-  #portfolio .all-projects .project-img {
+  #cidades .all-projects .project-img {
     height: 100%;
   }
-  #portfolio .project-item:nth-child(even) {
+  #cidades .project-item:nth-child(even) {
     flex-direction: row-reverse;
   }
 }
