@@ -13,7 +13,11 @@ html {
   text-align: justify;
 }
 
+<<<<<<< HEAD
 h2 {
+=======
+h2{
+>>>>>>> fb0afbc28ef9eb0818abc5369624f963d29a29ac
   color: gold;
   font-style: italic;
 }
@@ -34,6 +38,7 @@ p {
   letter-spacing: 0.05rem;
 }
 
+
 .container {
   min-height: 100vh;
   width: 100%;
@@ -51,6 +56,7 @@ p {
   letter-spacing: 0.2rem;
   text-align: center;
 }
+
 
 .title {
   color: gold;
